@@ -1,0 +1,311 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Donate</title>
+<link href="{% static 'css/bootstrap.css' %}"  rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Donate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<!-- animated-css -->
+		<link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" media="all">
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<script>
+		 new WOW().init();
+		</script>
+<!-- animated-css -->
+<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+ <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+         auto: true,
+		 nav: true,
+		 speed: 500,
+		 namespace: "callbacks",
+      });
+    });
+  </script>
+
+</head>
+<body>
+<!--banner start here-->
+<div class="ban-mother-grid">
+<div class="slider">
+		    <ul class="rslides" id="slider1">
+		      <li>
+		      	<div class="banner">
+					
+				</div>
+		      </li>
+		      <li>
+		      	<div class="banner2">
+					
+				</div>
+		      </li>
+		      <li>
+		      	<div class="banner3">
+					
+				</div>
+		      </li>
+                      
+		    </ul>
+ </div>	
+<div class="header">
+	<div class="container">
+			   <div class="logo wow bounceInLeft" data-wow-delay="0.3s">
+			     <h1><a href="{% url 'index' %}">Kalpvraksh</a></h1>
+			   </div>
+			   <div class="header-icons">
+			   	 <ul>
+			   	 	<li><a href="#" class="fb"> </a></li>
+			   	 	<li><a href="#" class="twit"> </a></li>
+			   	 	<li><a href="#" class="gmail"> </a></li>
+			   	 	<li><a href="#" class="dri"> </a></li>
+			   	 </ul>
+			   </div>
+			    <div class="clearfix"> </div>
+    </div>	    
+</div>
+ <!--navgation start here-->
+<div class="top-nav">
+    	 <span class="menu"> <img src="{% static 'images/icon.png' %}" alt=""></span>	
+		<ul class="res">
+			<li><a class="active" href="{% url 'index' %}"><i class="glyphicon glyphicon-home"> </i>Home</a></li>
+			<li><a href="{% url 'about' %}"><i class="glyphicon glyphicon-user"> </i>About</a></li>
+            <li><a href="{%  url 'waytodonate' %}"><i class="glyphicon glyphicon-envelope"> </i>Way to Donate</a></li>
+            <li><a href="{% url 'donatenow' %}"><i class="glyphicon glyphicon-envelope"> </i>Donate    Now</a></li>
+			<li><a href="{% url 'signin' %}"><i class="glyphicon glyphicon-list-alt"> </i>Sign In</a></li>
+			<li><a href="{% url 'blog' %}"><i class="glyphicon glyphicon-picture"> </i>Blog</a></li>
+			<li><a href="{% url 'contact' %}"><i class="glyphicon glyphicon-envelope"> </i>Contact</a></li>
+
+                        
+		</ul>
+		<!-- script-for-menu -->
+					 <script>
+					   $( "span.menu" ).click(function() {
+						 $( "ul.res" ).slideToggle( 300, function() {
+						 // Animation complete.
+						  });
+						 });
+					</script>
+	<!-- /script-for-menu -->
+</div>	
+</div>
+<!--navgation end here-->
+<!--banner end here-->
+<div class="banner-strip">
+	<div class="container">
+		<div class="bann-strip-main">
+			   <div class="col-md-4 bann-strip-grid">
+			   	  <div class="col-md-4 b-strip-left">
+			   	  	 <span class="glyphicon glyphicon-leaf hovicon effect-4 sub-b" aria-hidden="true"> </span>
+			   	  </div>
+			   	  <div class="col-md-8 b-strip-right"><br>
+                                      <a href="{% url 'whocandonate' %}"  > <h4>Who can Donate?</h4> </a>
+			   	  	 
+			   	  </div>
+			   	  <div class="clearfix"> </div>
+			   </div>
+			   <div class="col-md-4 bann-strip-grid">
+			   	  <div class="col-md-4 b-strip-left">
+			   	  	 <span class="glyphicon glyphicon-eye-open hovicon effect-4 sub-b" aria-hidden="true"> </span>
+			   	  </div>
+			   	  <div class="col-md-8 b-strip-right"><br>
+			   	  	<a href="{% url 'whatcandonate' %}"><h4>What can Donate?</h4></a>
+			   	  	
+			   	  </div>
+			   	  <div class="clearfix"> </div>
+			   </div>
+			   <div class="col-md-4 bann-strip-grid">
+			   	  <div class="col-md-4 b-strip-left">
+			   	  	<span class="glyphicon glyphicon-education hovicon effect-4 sub-b" aria-hidden="true"> </span>
+			   	  </div>
+			   	  <div class="col-md-8 b-strip-right"><br>
+			   	  	<a href="{% url 'howcandonate' %}"><h4>How can Donate?</h4></a>
+			   	  	
+			   	  </div>
+			   	  <div class="clearfix"> </div>
+			   </div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--vedio block start here-->
+<div class="vedio">
+	<div class="container">
+		<div class="vedio-main">
+			<div class="col-md-6 vedio-left wow fadeInLeft" data-wow-delay="0.3s">
+				<h2>WHO WE ARE</h2>
+				<p>
+
+Kalpvraksh or Kalpavriksha (कल्पवृक्ष), also known as kalpataru, kalpadruma or kalpapādapa, is a wish-fulfilling divine tree in Hindu mythology. It is mentioned in Sanskrit literature from the earliest sources. Kalpavrikshas are wish-granting trees which fulfill the desires of people in initial stages of worldly cycle
+
+Kalpvraksh are the team of social worker’s to create lasting change in the lives of children, families and communities living in poverty and injustice.
+</p>
+			</div>
+			<div class="col-md-6 vedio-right wow fadeInRight" data-wow-delay="0.3s">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/-ESUXpwMW1U" frameborder="0" allowfullscreen></iframe>			
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--vedio block end here-->
+<!--charity strip start here-->
+<div class="charity">
+	<div class="container">
+		<div class="charity-main wow fadeInRight" data-wow-delay="0.3s">
+			<h3>No one has ever become Poor by Giving</h3>
+                        <p>Sharing is caring! Only humans have the power to give and change the world
+                            by its actions. Helping makes a world better place. </p>
+		</div>
+	</div>
+</div>
+<!--charity strip end here-->
+<!--donate start here-->
+<div class="donayte">
+	<div class="container">
+		<div class="donate-main">
+			<div class="col-md-3 donate-grid wow fadeInLeft" data-wow-delay="0.3s">
+				<h3>Donate Our Charity</h3>
+				<h4>It does not matter how much we donate; it matters whether the donation is meaningful. How to define meaningful? Let society and history judge.</h4>
+                        </div>
+			<div class="col-md-3 donate-grid wow fadeInLeft" data-wow-delay="0.3s">
+				<div class="fall-down-effect top">
+							<div class="img-box"><img src="{% static 'images/015.jpg' %}" alt=""></div>
+							<div class="text-box">
+								<div class="text-content">
+									<h3>Help</h3>																																		
+								</div>
+							</div>
+						</div>
+				<h5>No Food Waste: When leftovers reach the hungry</h5>	
+				<p></p>
+			</div>
+			<div class="col-md-3 donate-grid wow fadeInRight" data-wow-delay="0.3s">
+				<div class="fall-down-effect top">
+							<div class="img-box"><img src="{% static 'images/009.png' %}" alt=""></div>
+							<div class="text-box">
+								<div class="text-content">
+									<h3>Help</h3>																																		
+								</div>
+							</div>
+						</div>
+				<h5>Clothes Donation Camp By Kalpvraksh at Mujeri Village in Ballabgarh</h5>		
+				<p></p>			
+			</div>
+			<div class="col-md-3 donate-grid wow fadeInRight" data-wow-delay="0.3s">
+				<div class="fall-down-effect top">
+							<div class="img-box"><img src="{% static 'images/d3.jpg' %}" alt=""></div>
+							<div class="text-box">
+								<div class="text-content">
+									<h3>Help</h3>																																		
+								</div>
+							</div>
+						</div>
+				<h5>Giving Up your LPG subsidy to help mother's everywhere.</h5>		
+				<p></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--donate end here-->
+<!--terisa block start here-->
+<div class="terisa">
+	<div class="container">
+		<div class="terisa-main">
+			  <div class="col-md-6 terisa-left wow fadeInLeft" data-wow-delay="0.3s">
+				<h3>HOW CAN YOU HELP?</h3>
+				<p>There are various ways by which you can contribute to those in need.</p>
+				<ul>
+					<li><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><a href="#"> Donating your old books </a></li>
+					<li><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><a href="#"> Donating clothes that you don't need anymore</a></li>
+					<li><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><a href="#"> Feeding someone by donating some food.</a></li>
+				</ul>
+			  </div>
+			 <div class="col-md-6 terisa-right wow fadeInRight" data-wow-delay="0.3s">
+				  <img src="{% static 'images/h1.png' %}" alt="" class="img-responsive">
+			 </div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--terisa block end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grid wow zoomIn" data-wow-delay="0.3s">
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="{% url 'about' %}">About</a></li>
+					<li><a href="{% url 'signin' %}">Sign In</a></li>
+					<li><a href="{% url 'blog' %}">Blog</a></li>
+					<li><a href="{% url 'contact' %}">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grid wow zoomIn" data-wow-delay="0.3s">
+				<h3>Latest Tweet</h3>
+				<div class="tweets">
+					<div class="tweet-icon">
+						<span class="tweet-img"> </span>
+					</div>
+					<div class="tweet-text">
+						<p>@Pratik</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<p>Kalpvarsh shows the true meaning of serving the ones who needs the most.Great initiative by kalpvarsh.</p>
+			</div>
+			<div class="col-md-4 ftr-grid wow zoomIn" data-wow-delay="0.3s">
+				<h3>Keep In Touch</h3>
+				<div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-map-marker">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>Tata iON, Pitampura, New Delhi</p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-earphone">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>+91 7836836778 </p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-envelope">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p><a href="mailto:info@example.com">kalpvraksh@gmail.com</a></p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>		
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+
+</body>
+</html>		 

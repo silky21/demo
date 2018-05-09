@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Health</title>
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Donate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+</head>
+<body>
+<!--banner start here-->
+<div class="banner1">
+	<div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo">
+	     <h1><a href="{% url 'index' %}">Kalpvraksh</a></h1>
+	   </div>
+	   <div class="header-icons">
+	   	 <ul>
+	   	 	<li><a href="#" class="fb"> </a></li>
+	   	 	<li><a href="#" class="twit"> </a></li>
+	   	 	<li><a href="#" class="gmail"> </a></li>
+	   	 	<li><a href="#" class="dri"> </a></li>
+	   	 </ul>
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+<div class="top-nav">
+            	<span class="menu"> <img src="{% static 'images/icon.png' %}" alt=""></span>	
+				<ul class="res">
+					<li><a href="{% url 'index' %}"><i class="glyphicon glyphicon-home"> </i>Home</a></li>
+					<li><a href="{% url 'about' %}"><i class="glyphicon glyphicon-user"> </i>About</a></li>					
+					<li><a href="{% url 'waytodonate' %}"><i class="glyphicon glyphicon-envelope"> </i>Way to Donate</a></li>
+                    <li><a href="{% url 'donatenow' %}"><i class="glyphicon glyphicon-envelope"> </i>Donate    Now</a></li>
+                    <li><a href="{% url 'signin' %}"><i class="glyphicon glyphicon-list-alt"> </i>Sign In</a></li>
+					<li><a href="{% url 'blog' %}"><i class="glyphicon glyphicon-picture"> </i>Blog</a></li>
+					<li><a href="{% url 'contact' %}"><i class="glyphicon glyphicon-envelope"> </i>Contact</a></li>
+                                </ul>
+				<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.res" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+			<!-- /script-for-menu -->
+</div>		
+</div>	
+<!--banner end here-->
+
+<!--Forms-->
+
+<div class="page-header jumbotron" style="height: 2052px;margin-left:90px;margin-right:90px;">
+    <center><h1>HEALTH CANNOT WAIT!!!</h1></center>
+
+
+<div style="height:500px;">
+    <img src="{% static 'images/011.jpg' %}" height="500" width="1172">
+</div><br>
+<div class="container-fluid" style="height:500px;width:1172px;" >
+<div class=" container col-lg-6 jumbotron">
+    <h2>Health Cannot wait</h2>
+
+    <div>
+        <p>
+            The current health scenario of the general population of India is a sad one. According to The Lancet a new index developed to assess each country’s achievement on a range of health indicators, India ranks at 154 in a list of 188 countries. A staggering 70% of the population still lives in rural areas and has no or limited access to hospitals and clinics. In addition, India has 48 doctors per 100,000 persons which is fewer than in developed nations. The country has the third highest child mortality rate among SAARC countries with 48 deaths reported per 1,000 live births and the total life expectancy is 68.3 which gives India a World Life Expectancy ranking of 123.
+        </p><br>
+        
+    
+    
+    </div>
+    <div>
+    <a href="{% url 'donatenow' %}"><button type="submit" class="btn btn-lg btn-primary">Donate</button></a>
+    </div>
+</div>
+    <div style="margin-top: 100px;" >
+        <p>
+            A two pronged approach – first to bring quality health care services to doorsteps of the needy and second to promote healthcare awareness and contemporary health care seeking behavior among the underprivileged has become the most important need for the people at the moment.
+            
+        </p><br>
+        <p>
+            More than 10 lakh children and families have benefitted so far from the free healthcare services provided through the Smile on Wheels programme.
+        </p><br>
+        
+    </div>
+    </div>
+    
+
+<div>
+    <img src="{% static 'images/012.png' %}" alt=""  height="450" width="1170">
+</div>
+</div>   
+    
+    
+    
+    
+    
+    
+   
+
+      
+    
+  
+<!--form ends here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grid">
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="{% url 'about' %}">About</a></li>
+					<li><a href="{% url 'signin' %}">Sign In</a></li>
+					<li><a href="{% url 'blog' %}">Blog</a></li>
+					<li><a href="{% url 'contact' %}">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grid">
+				<h3>Latest Tweet</h3>
+				<div class="tweets">
+					<div class="tweet-icon">
+						<span class="tweet-img"> </span>
+					</div>
+					<div class="tweet-text">
+						<p>@Pratik</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<p>Kalpvarsh shows the true meaning of serving the ones who needs the most.Great initiative by kalpvarsh.</p>
+			</div>
+			<div class="col-md-4 ftr-grid">
+				<h3>Keep In Touch</h3>
+				<div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-map-marker">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>Tata iON, Pitampura, New Delhi</p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-earphone">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>+91 7836836778 </p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-envelope">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p><a href="mailto:info@example.com">kalpvraksh@gmail.com</a></p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>		
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+
+</body>
+</html>

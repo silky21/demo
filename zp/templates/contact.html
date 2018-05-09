@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Donate a Society & People Category Flat Bootstrap Responsive  Website Template | Contact :: w3layouts</title>
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Donate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+</head>
+<body>
+<!--banner start here-->
+<div class="banner1">
+	<div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo">
+	     <h1><a href="{% url 'index' %}">Kalpvraksh</a></h1>
+	   </div>
+	   <div class="header-icons">
+	   	 <ul>
+	   	 	<li><a href="#" class="fb"> </a></li>
+	   	 	<li><a href="#" class="twit"> </a></li>
+	   	 	<li><a href="#" class="gmail"> </a></li>
+	   	 	<li><a href="#" class="dri"> </a></li>
+	   	 </ul>
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+<div class="top-nav">
+            	<span class="menu"> <img src="{% static 'images/icon.png' %}" alt=""></span>	
+				<ul class="res">
+					<li><a href="{% url 'index' %}"><i class="glyphicon glyphicon-home"> </i>Home</a></li>
+					<li><a href="{% url 'about' %}"><i class="glyphicon glyphicon-user"> </i>About</a></li>					
+					<li><a href="{% url 'waytodonate' %}"><i class="glyphicon glyphicon-envelope"> </i>Way to Donate</a></li>
+                    <li><a href="{% url 'donatenow' %}"><i class="glyphicon glyphicon-envelope"> </i>Donate    Now</a></li>
+                    <li><a href="{% url 'signin' %}"><i class="glyphicon glyphicon-list-alt"> </i>Sign In</a></li>
+					<li><a href="{% url 'blog' %}"><i class="glyphicon glyphicon-picture"> </i>Blog</a></li>
+					<li><a class="active" href="{% url 'contact' %}"><i class="glyphicon glyphicon-envelope"> </i>Contact</a></li>
+                                       
+				</ul>
+				<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.res" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+			<!-- /script-for-menu -->
+</div>		
+</div>	
+<!--banner end here-->
+<!--contact start here-->
+<div class="contact" id="contact">
+			<div class="container">
+				<div class="contact-top">
+					<h3>Contact</h3>					
+				</div>
+				 <form action="#" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+							<div class="contact-grid">
+								<div class="col-md-6 contact-us">
+										{{ contactus.name }}
+								</div>
+								<div class="col-md-6 contact-us">
+										{{ contactus.email }}
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="contact-grid">
+								<div class="col-md-6 contact-us">
+										{{ contactus.url }}
+								</div>
+								<div class="col-md-6 contact-us">
+										{{ contactus.subject }}
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							{{ contactus.message }}
+							<div class="send">
+								<input type="submit" value="SEND">
+							</div>
+						</form>
+				<div class="contact-bottom">
+					<div class="col-md-5 sit-contact">
+						<h5>Connect with us  </h5>
+						<div class="contact-add">
+							<p>TATA Consultancy Services</p>
+							<p>Kalpvraksh, Pitampura, New Delhi</p>
+							<p>Mob.+91 783 683 6778</p>
+						</div>
+						<ul class="face">
+							<li class="active"><a href="#">facebook </a><span>/</span></li>
+							<li><a href="#">twitter </a><span>/</span></li>
+							<li><a href="#">linkedin </a><span>/</span></li>
+							<li><a href="#">instagram</a></li>
+						</ul>
+					</div>
+					<div class="col-md-7 main-map">
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30704254.13171362!2d64.40417345539615!3d20.0471796887422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1522478213158" width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe> 
+						</div>
+						<span class="map-icon"> </span>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			
+		</div>
+<!--contact end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grid">
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="{% url 'about' %}">About</a></li>
+					<li><a href="{% url 'signin' %}">Sign In</a></li>
+					<li><a href="{% url 'blog' %}">Blog</a></li>
+					<li><a href="{% url 'contact' %}">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grid">
+				<h3>Latest Tweet</h3>
+				<div class="tweets">
+					<div class="tweet-icon">
+						<span class="tweet-img"> </span>
+					</div>
+					<div class="tweet-text">
+						<p>@Pratik</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<p>Kalpvarsh shows the true meaning of serving the ones who needs the most.Great initiative by kalpvarsh.</p>
+			</div>
+			<div class="col-md-4 ftr-grid">
+				<h3>Keep In Touch</h3>
+				<div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-map-marker">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>Tata iON, Pitampura, New Delhi</p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-earphone">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>+91 7836836778 </p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-envelope">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p><a href="mailto:info@example.com">kalpvraksh@gmail.com</a></p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>		
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+
+</body>
+</html>

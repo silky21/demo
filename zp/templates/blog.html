@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Donate a Society & People Category Flat Bootstrap Responsive  Website Template | Blog :: w3layouts</title>
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Donate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+</head>
+<body>
+<!--banner start here-->
+<div class="banner1">
+	<div class="header">
+   <div class="container">
+     <div class="header-main">
+	   <div class="logo">
+	     <h1><a href="{% url 'index' %}">Kalpvraksh</a></h1>
+	   </div>
+	   <div class="header-icons">
+	   	 <ul>
+	   	 	<li><a href="#" class="fb"> </a></li>
+	   	 	<li><a href="#" class="twit"> </a></li>
+	   	 	<li><a href="#" class="gmail"> </a></li>
+	   	 	<li><a href="#" class="dri"> </a></li>
+	   	 </ul>
+	   </div>
+	    <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+<div class="top-nav">
+    	<span class="menu"> <img src="{% static 'images/icon.png' %}" alt=""></span>	
+		<ul class="res">
+			<li><a href="{% url 'index' %}"><i class="glyphicon glyphicon-home"> </i>Home</a></li>
+			<li><a href="{% url 'about' %}"><i class="glyphicon glyphicon-user"> </i>About</a></li>			
+			<li><a href="{% url 'waytodonate' %}"><i class="glyphicon glyphicon-envelope"> </i>Way to Donate</a></li>
+        	<li><a href="{% url 'donatenow' %}"><i class="glyphicon glyphicon-envelope"> </i>Donate    Now</a></li>
+            <li><a href="{% url 'signin' %}"><i class="glyphicon glyphicon-list-alt"> </i>Sign In</a></li>
+			<li><a class="active" href="{% url 'blog' %}"><i class="glyphicon glyphicon-picture"> </i>Blog</a></li>
+			<li><a href="{% url 'contact' %}"><i class="glyphicon glyphicon-envelope"> </i>Contact</a></li>
+                       
+		</ul>
+		<!-- script-for-menu -->
+					 <script>
+					   $( "span.menu" ).click(function() {
+						 $( "ul.res" ).slideToggle( 300, function() {
+						 // Animation complete.
+						  });
+						 });
+					</script>
+	<!-- /script-for-menu -->
+</div>		
+</div>	
+<!--banner end here-->
+<!--blog start here-->
+<div class="blog">
+	<div class="container">
+		<div class="blog-main">
+			<div class="blog-top">
+			<h3> Blog</h3>
+			</div>
+			<div class="col-md-8 blog-left">
+				    <a href="{% url 'single' %}"> <img src="{% static 'images/007.jpg' %}" alt="" class="img-responsive"> </a>
+		   <div class="blog-grid">
+			   <div class="grid-left">			   	  
+			      <h3>25</h3>
+                              <p>Feb</p>
+			   </div>
+			   <div class="grid-right">
+			   	 <a href="{% url 'single' %}"><h3>Clothes Donation Camp By Kalpvraksh at Mujeri Village in Ballabgarh</h3></a>
+			   	   
+			   	   <p>In the wake of early morning hours in Gurgaon, our Kalpvraksh Team traveled to Ballabgarh’s Mujeri Village in Faridabad to support the initiative taken up by Mr. Amit Kapasia to help the local poor children find some warm clothes & organised this event.</p>
+			   	   <a class="bwn" href="{% url 'single' %}">Read More</a>
+			   </div>
+			 <div class="clearfix"> </div>
+			 </div>
+			 <div class="blog-section">
+			 	  <a href="{% url 'single' %}"> <img src="{% static 'images/015.jpg' %}" alt=""  class="img-responsive"> </a>
+			 <div class="grid">
+			 	 <div class="grid-left">			   	 
+			      <h3>26</h3>
+			      <p>Mar</p>
+			   </div>
+			 	 <div class="grid-right">
+			   	 <a href="{% url 'single1' %}"><h3>No Food Waste: When leftovers reach the hungry.</h3></a>
+			   	   
+			   	   <p>As Guna Sekaran and Ashwin Narayan unload the food packets, a small crowd gathers, mostly of children under 12. They seem shy, almost retreating. But as the packets are handed out, a bit of jostling begins and their eyes light up at the sight of what’s inside — four chapatis and a generous portion of mixed vegetable. Wordlessly, they sit on the floor and tuck in.</p>
+                                   <a class="bwn" href="{% url 'single1' %}">Read More</a>
+			   </div>
+			   <div class="clearfix"> </div>
+			  </div>
+			 </div>
+			  <div class="blog-section">
+			 <a href="{% url 'single' %}"> <img src="{% static 'images/006.jpg' %}" alt=""  class="img-responsive"></a>
+			 <div class="grid">
+			 	 <div class="grid-left">			   	
+			      <h3>27</h3>
+			      <p>Mar</p>
+			   </div>
+			 	 <div class="grid-right">
+			   	  <a href="{% url 'single2' %}"><h3>A Reading of “Ismat’s Eid”</h3></a>
+			   	   
+			   	   <p>An invitation to read with students (  grades 7 to 9)  of the newest centre of our VIDYA Bhavishya Yaan Program at Mazagaon, was certainly a cause for cheer.  The reading duo of Bhasyati Sinha and Jayshree Murali marched across from the northern end of the suburbs to the island city of Mumbai  with glee.</p>
+			   	   <a class="bwn" href="{% url 'single2' %}">Read More</a>
+			   </div>
+			   <div class="clearfix"> </div>
+			  </div>
+			 </div>
+			  <div class="pag-nations">
+					<ul class="p_n-list">
+						<li><a href="#">Prev</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+			 </div>
+			</div>
+			<div class="col-md-4 blog-right">
+				
+			<div class="blog-cate">
+				
+				<ul>
+					
+                                </ul>
+		  </div>
+		  <div class="blog-posts">
+		  	<h3>Recent Posts</h3>
+		  	<div class="blog-posts-grid">
+		  		<div class="col-md-5 blog-post-left">
+		  			<a href="{% url 'single' %}"><img src="{% static 'images/c4.jpg' %}" alt="" class="img-responsive"></a>		  			
+		  		</div>
+		  		<div class="col-md-7 blog-post-right">
+		  			<h4><a href="{% url 'single' %}">The Right way to make donations.</a></h4>
+		  			<p></p>
+		  		</div>
+		  	  <div class="clearfix"> </div>
+		  	</div>
+		  	<div class="blog-posts-grid">
+		  		<div class="col-md-5 blog-post-left">
+		  			<a href="{% url 'single' %}"><img src="{% static 'images/c5.jpg' %}" alt="" class="img-responsive"></a>		  			
+		  		</div>
+		  		<div class="col-md-7 blog-post-right">
+		  			<h4><a href="{% url 'single' %}"></a>Biology Class Inspires a Life-long Organ Donation Advocate</h4>
+		  			<p></p>
+		  		</div>
+		  	  <div class="clearfix"> </div>
+		  	</div>
+                        <div class="blog-posts-grid">
+		  		<div class="col-md-5 blog-post-left">
+		  			<a href="{% url 'single' %}"><img src="{% static 'images/c4.jpg' %}" alt="" class="img-responsive"></a>		  			
+		  		</div>
+		  		<div class="col-md-7 blog-post-right">
+		  			<h4><a href="{% url 'single' %}"> Read how Jill volunteered with Clothing the Homeless and found new perspective</a></h4>
+		  			<p></p>
+		  		</div>
+		  	  <div class="clearfix"> </div>
+		  	</div>
+		  	<div class="blog-posts-grid">
+		  		<div class="col-md-5 blog-post-left">
+		  			<a href="single.html"><img src="{% static 'images/c5.jpg' %}" alt="" class="img-responsive"></a>		  			
+		  		</div>
+		  		<div class="col-md-7 blog-post-right">
+		  			<h4><a href="single.html"></a>Glenside, PA Mother of Two Finds Comfort this Holiday in Husband’s Life-Saving Legacy</h4>
+		  			<p></p>
+		  		</div>
+		  	  <div class="clearfix"> </div>
+		  	</div>
+                        <div class="blog-posts-grid">
+		  		<div class="col-md-5 blog-post-left">
+		  			<a href="single.html"><img src="{% static 'images/c4.jpg' %}" alt="" class="img-responsive"></a>		  			
+		  		</div>
+		  		<div class="col-md-7 blog-post-right">
+		  			<h4><a href="single.html"></a>Cherry Hill, NJ Resident Reaches 200,000 Students with Life-Saving Message</h4>
+		  			<p></p>
+		  		</div>
+		  	  <div class="clearfix"> </div>
+		  	</div>
+		  	<div class="blog-posts-grid">
+		  		<div class="col-md-5 blog-post-left">
+		  			<a href="single.html"><img src="{% static 'images/c5.jpg' %}" alt="" class="img-responsive"></a>		  			
+		  		</div>
+		  		<div class="col-md-7 blog-post-right">
+		  			<h4><a href="single.html">25 years after organ transplant, still grateful for gift of life</a></h4>
+		  			<p></p>
+		  		</div>
+		  	  <div class="clearfix"> </div>
+		  	</div>
+		  </div>
+		</div>
+	</div>
+</div>
+</div>
+<!--blog end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-4 ftr-grid">
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="{% url 'about' %}">About</a></li>
+					<li><a href="{% url 'signin' %}">Sign In</a></li>
+					<li><a href="{% url 'blog' %}">Blog</a></li>
+					<li><a href="{% url 'contact' %}">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 ftr-grid">
+				<h3>Latest Tweet</h3>
+				<div class="tweets">
+					<div class="tweet-icon">
+						<span class="tweet-img"> </span>
+					</div>
+					<div class="tweet-text">
+						<p>@Pratik</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<p>Kalpvarsh shows the true meaning of serving the ones who needs the most.Great initiative by kalpvarsh.</p>
+			</div>
+			<div class="col-md-4 ftr-grid">
+				<h3>Keep In Touch</h3>
+				<div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-map-marker">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>Tata iON, Pitampura, New Delhi</p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-earphone">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p>+91 7836836778 </p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			   <div class="ftr-icons">
+			    	  	 <div class="ftr-iblock">
+			        	   <span class="glyphicon glyphicon-envelope">  </span>
+			        	 </div>
+			        	 <div class="ftr-text">
+			        	 	<p><a href="mailto:info@example.com">kalpvraksh@gmail.com</a></p>
+			        	 </div>
+			        	 <div class="clearfix"> </div>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>		
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+
+</body>
+</html>
