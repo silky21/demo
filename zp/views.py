@@ -201,12 +201,12 @@ def login_view(request):
                 # wrong credentials
                 login_error = "Username/Password incorrect"
     
-        context = {
-        'form' : loginForm,
-        'login_error' : login_error
-        }
+    context = {
+    'loginForm' : loginForm,
+    'login_error' : login_error
+    }
     
-        return render(request, 'zp/sign_in.html', context)   
+    return render(request, 'sign_in.html', context)   
 
 class Single(TemplateView):
     
